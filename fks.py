@@ -1,3 +1,8 @@
 #! /usr/bin/python
 
-print "I'm a fake sensor!"
+import sys
+
+if len(sys.argv) > 1 and sys.argv[1]=="--live" :
+	print("--live")
+else:
+	print("Opcao nao disponivel")
